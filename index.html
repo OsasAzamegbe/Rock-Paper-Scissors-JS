@@ -8,18 +8,48 @@
     <link rel="stylesheet" href="./index.css">
     <title>Rock Paper Scissors!</title>
 </head>
-<body class="bg-light">
-    <div class="row align-items-center justify-content-center h-100"> 
+<body>
+    <div class="row align-items-center justify-content-center h-100">
+
+        <!-- SCORES -->
+        <div class="d-flex flex-column align-items-center justify-content-end font-monospace fixed-top py-4">
+            <h1 class="text-uppercase">scores</h1>
+            <div class="d-flex flex-row">                
+                <span class="mr-4">
+                    <i class="fas fa-user-circle"></i>
+                </span>
+                <span class="mx-1">
+                    <h3 class=="user-score text-uppercase">0 </h3>
+                </span>
+                <span class="mx-1">
+                    <h3 class=="text-uppercase">-</h3>
+                </span>
+                <span class="mx-1">
+                    <h3 class=="comp-score text-uppercase"> 0</h3>
+                </span>
+                <span class="ml-4">
+                    <i class="fas fa-robot"></i>
+                </span>               
+            </div>
+        </div>
+
+        <!-- GAME -->
         <div class="col">
-            <!-- <h1 class=" text-center font-monospace mt-auto"><strong>Rock, Paper, Scissors!</strong></h1> -->
-            <!-- <br/><br/> -->
             <div class="d-flex flex-column align-items-center justify-content-center">
-                <p class="h5 text-info">Make your choice!</p>
-                <p class="h3 text-danger"><strong>ROCK, PAPER, SCISSORS???</strong></p>
-                <div class="d-flex flex-row">
-                    <i class="mx-2 fas fa-hand-rock"></i>
-                    <i class="mx-2 fas fa-hand-paper"></i>
-                    <i class="mx-2 fas fa-hand-scissors"></i>
+                <p class="h1 text-dark text-capitalize">Make your choice!</p>
+                <div class="mt-4 d-flex flex-row">
+                    <span class="mx-4 text-center">
+                        <p class="h2 text-danger text-uppercase"><strong>rock?</strong></p>
+                        <i class="my-2 fas fa-hand-rock"></i>
+                    </span>
+                    <span class="mx-4 text-center">
+                        <p class="h2 text-danger text-uppercase"><strong>paper?</strong></p>
+                        <i class="my-2 fas fa-hand-paper"></i>
+                    </span>
+                    <span class="mx-4 text-center">
+                        <p class="h2 text-danger text-uppercase"><strong>scissors?</strong></p>
+                        <i class="my-2 fas fa-hand-scissors"></i>
+                    </span>
                 </div>
             </div>
         </div> 

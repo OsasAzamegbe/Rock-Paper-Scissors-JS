@@ -68,7 +68,6 @@ class Game{
     evaluateScore(user, computer){
         let userScore = parseInt(this.userScore.textContent);
         let compScore = parseInt(this.compScore.textContent);
-        console.log(user, computer);
         let result = '';
 
         // if it is not a draw
@@ -111,18 +110,18 @@ class Game{
     }
 
     // shows the result of current turn to user
-    showCurrentTurn(user, computer, result){
-        if (this.showTurn.innerHTML != ''){
-            this.showTurn.innerHTML = '';
+    showCurrentTurn(user, computer, result){        
+
+        if (this.showTurn.innerHTML){          
             this.showTurn.classList.remove('fade-in');
+            setTimeout(()=>{                
+                this.showTurn.innerHTML= `${this.hands['face']} ${this.hands[user]} ${this.hands[result]} ${this.hands[computer]} ${this.hands['robot']} `;
+                this.showTurn.classList.add('fade-in');
+            }, 1000);                               
+        } else{             
+            this.showTurn.innerHTML= `${this.hands['face']} ${this.hands[user]} ${this.hands[result]} ${this.hands[computer]} ${this.hands['robot']} `;
+            this.showTurn.classList.add('fade-in');
         }
-        this.showTurn.classList.toggle('fade-in');
-        this.showTurn.innerHTML= `${this.hands['face']} ${this.hands[user]} ${this.hands[result]} ${this.hands[computer]} ${this.hands['robot']} `;
-        
-        setTimeout(()=>{
-            this.showTurn.innerHTML = '';
-            this.showTurn.classList.remove('fade-in');
-        }, 3000);
         
     }
     

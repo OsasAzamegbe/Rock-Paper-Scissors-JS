@@ -33,6 +33,10 @@ body {
 #show-turn.fade-in{
   opacity: 1;
 }
+/* 
+#show-turn.fade-out{
+  opacity: 0;
+} */
 
 .fa-check{
   color: green;

@@ -122,7 +122,7 @@ class Game{
         setTimeout(()=>{
             this.showTurn.innerHTML = '';
             this.showTurn.classList.remove('fade-in');
-        }, 2000);
+        }, 3000);
         
     }
     

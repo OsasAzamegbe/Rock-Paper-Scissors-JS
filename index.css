@@ -6,7 +6,7 @@ body {
 
   height: 100%;
   background-color: var(--bg-color);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .fa-hand-rock,
@@ -56,4 +56,9 @@ body {
   width: 90vmin;
   height: 35vmin;
   background-color: var(--bg-color);
+  position: relative;
+}
+.options{
+  width: 80vmin;
+  position: relative;
 }

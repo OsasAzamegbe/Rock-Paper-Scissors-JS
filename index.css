@@ -59,7 +59,7 @@ body {
   position: relative;
 }
 .options{
-  margin: 0em;
-  width: 80vmin;
+  /* margin: 0em; */
+  width: 90vmin;
   position: relative;
 }

@@ -5,31 +5,31 @@ class Game{
         this.choice = ['rock', 'paper', 'scissors'];
         this.showTurn = document.getElementById("show-turn");
         this.hands ={
-            'rock': `<span class="text-center mx-4">
-                        <p class="h4 font-monospace text-uppercase"><strong>rock</strong></p>
+            'rock': `<span class="text-center">
+                        <p class="h5 font-monospace text-uppercase">rock</p>
                         <i class="fas fa-hand-rock"></i>
                     </span>`,
-            'paper': `<span class="text-center mx-4">
-                        <p class="h4 font-monospace text-uppercase"><strong>paper</strong></p>
+            'paper': `<span class="text-center">
+                        <p class="h5 font-monospace text-uppercase">paper</p>
                         <i class=" fas fa-hand-paper"></i>
                     </span>`,
-            'scissors': `<span class="text-center mx-4 ">
-                            <p class="h4 font-monospace text-uppercase"><strong>scissors</strong></p>
+            'scissors': `<span class="text-center">
+                            <p class="h5 font-monospace text-uppercase">scissors</p>
                             <i class="fas fa-hand-scissors"></i>
                         </span>`,
             'win': `<span class="text-center">                        
-                        <i class="my-2 mx-4 fas fa-check"></i>
+                        <i class="fas fa-check"></i>
                     </span>`,
             'loss': `<span class="text-center">                        
-                        <i class="my-2 mx-4 fas fa-times"></i>
+                        <i class="fas fa-times"></i>
                     </span>`,
             'draw': `<span class="text-center">                        
-                        <i class="my-2 mx-4 fas fa-bars"></i>
+                        <i class="fas fa-bars"></i>
                     </span>`,
-            'face': `<span class="mr-4">
+            'face': `<span class="">
                         <i class="fas fa-user-circle"></i>
                     </span>`,
-            'robot': `<span class="ml-4">
+            'robot': `<span class="">
                         <i class="fas fa-robot"></i>
                     </span>`
         };
